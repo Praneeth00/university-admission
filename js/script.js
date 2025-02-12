@@ -9,7 +9,7 @@ function predictAdmission() {
         research: parseInt(document.getElementById("research").value)
     };
 
-    fetch("https://university-admission-frontend.onrender.com", {
+    fetch("https://university-admission-frontend.onrender.com/predict", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
