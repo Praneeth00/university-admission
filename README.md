@@ -1,0 +1,3 @@
+A simple web application that predicts the probability of university admission based on GRE, TOEFL, GPA, and other factors. Still a beta version...
+
+Live Demo: https://praneeth00.github.io/university-admission/
