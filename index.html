@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Predictor</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>University Admission Predictor 🎓</h1>
+        <form id="admissionForm">
+            <label for="gre">GRE Score:</label>
+            <input type="number" id="gre" required>
+
+            <label for="toefl">TOEFL Score:</label>
+            <input type="number" id="toefl" required>
+
+            <label for="university">University Rating (1-5):</label>
+            <input type="number" id="university" min="1" max="5" required>
+
+            <label for="sop">Statement of Purpose (1-5):</label>
+            <input type="number" id="sop" min="1" max="5" required>
+
+            <label for="lor">Letter of Recommendation (1-5):</label>
+            <input type="number" id="lor" min="1" max="5" required>
+
+            <label for="cgpa">CGPA (out of 10):</label>
+            <input type="number" step="0.1" id="cgpa" required>
+
+            <label for="research">Research Experience:</label>
+            <select id="research">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <button type="button" onclick="predictAdmission()">Predict</button>
+        </form>
+
+        <h2 id="result">Prediction Result: --</h2>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
