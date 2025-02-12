@@ -32,4 +32,4 @@ model.fit(X_train, y_train)
 joblib.dump(model, "models/admission_model.pkl")
 joblib.dump(scaler, "models/scaler.pkl")
 
-print("Model training complete and saved.")
+print("✅ Model training complete and saved.")
