@@ -11,10 +11,10 @@
         <h1>University Admission Predictor</h1>
         <form id="admissionForm">
             <label for="gre">GRE Score:</label>
-            <input type="number" id="gre" required>
+            <input type="number" id="gre" min="260" max="340" required>
 
             <label for="toefl">TOEFL Score:</label>
-            <input type="number" id="toefl" required>
+            <input type="number" id="toefl" min="0" min="120" required>
 
             <label for="university">University Rating (1-5):</label>
             <input type="number" id="university" min="1" max="5" required>
@@ -26,7 +26,7 @@
             <input type="number" id="lor" min="1" max="5" required>
 
             <label for="cgpa">CGPA (out of 10):</label>
-            <input type="number" step="0.1" id="cgpa" required>
+            <input type="number" step="0.1" id="cgpa" min="0" min="10" required>
 
             <label for="research">Research Experience:</label>
             <select id="research">
